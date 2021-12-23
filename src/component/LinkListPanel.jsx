@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 import { IoLogoInstagram } from 'react-icons/io';
 import { VscGithubAlt, VscMail } from 'react-icons/vsc';
+import { useLocation } from 'react-router-dom';
 
 /* Component Style */
 const Wrapper = styled.article`
   position: absolute;
-  bottom: 20px;
   right: 30px;
 `;
 
@@ -42,8 +42,13 @@ const Bar = styled.span`
 `;
 
 const LinkListPanel = () => {
+  const location = useLocation();
+  const pathname = location.pathname;
+
   return (
-    <Wrapper>
+    <Wrapper
+      style={pathname === '/about' ? { top: '20px' } : { bottom: '20px' }}
+    >
       <Bar></Bar>
 
       <LinkList>

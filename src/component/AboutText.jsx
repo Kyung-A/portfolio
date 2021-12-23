@@ -52,7 +52,7 @@ const SmileIcon = styled.div`
   position: absolute;
   top: 50%;
   margin-top: -19vh;
-  margin-left: 13vw;
+  margin-left: 15vw;
   z-index: 70;
   width: 12vw;
   height: 12vh;
@@ -74,7 +74,7 @@ const AboutText = () => {
       </SmileIcon>
 
       <TopText>
-        Hello. I'm <br /> EunGyeong Nam
+        Hello. I'm <br /> EunGyeong Nam.
       </TopText>
       <BottomText>
         I'm <span>front-end developer</span>.

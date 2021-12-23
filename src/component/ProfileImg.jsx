@@ -7,10 +7,9 @@ const Wrapper = styled.article`
   top: 50%;
   left: 50%;
   margin-top: -30vh;
-  margin-left: -28vw;
+  margin-left: -26vw;
   width: 24vw;
   height: 65vh;
-  background-color: #ccc;
   transform: rotate(350deg);
   z-index: 10;
 
@@ -20,7 +19,11 @@ const Wrapper = styled.article`
 `;
 
 const ProfileImg = () => {
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <img src="/images/profile.jpg" alt="프로필 이미지" />
+    </Wrapper>
+  );
 };
 
 export default ProfileImg;
