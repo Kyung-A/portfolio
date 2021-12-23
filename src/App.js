@@ -1,9 +1,10 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 
-import HeaderText from './component/HeaderText';
+import Intro from './page/Intro';
+import About from './page/About';
 import LinkListPanel from './component/LinkListPanel';
-import StartButton from './component/StartButton';
 
 /* Component Style */
 const Container = styled.main`
@@ -17,8 +18,11 @@ const Container = styled.main`
 function App() {
   return (
     <Container>
-      <HeaderText />
-      <StartButton />
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
       <LinkListPanel />
     </Container>
   );

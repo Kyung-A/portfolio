@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 /* Component Style */
@@ -14,8 +15,10 @@ const Wrapper = styled.div`
 
 const Button = styled.button`
   position: absolute;
-  top: 600px;
-  left: 900px;
+  top: 50%;
+  left: 50%;
+  margin-top: 135px;
+  margin-left: -70px;
   width: 100px;
   cursor: pointer;
   border: 0;
@@ -35,6 +38,9 @@ const ImgWrapper = styled.div`
 `;
 
 const StartButton = () => {
+  const navigate = useNavigate();
+
+  const wrapper = useRef();
   const startButtonImg = useRef();
   const characterImg = useRef();
 
@@ -46,10 +52,17 @@ const StartButton = () => {
   const handleMouseUp = () => {
     startButtonImg.current.src = '/images/start_button_01.png';
     characterImg.current.src = '/images/character_01.png';
+
+    wrapper.current.style.opacity = '0';
+    wrapper.current.style.transition = 'all 0.5s ease-in-out';
+
+    window.setTimeout(() => {
+      navigate('/about');
+    }, 800);
   };
 
   return (
-    <Wrapper>
+    <Wrapper ref={wrapper}>
       <Button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
         <img
           src="/images/start_button_01.png"
