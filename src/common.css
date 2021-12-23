@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Montserrat-BlackItalic';
+  src: url('../public/fonts/Montserrat-BlackItalic.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Noto Sans KR Bold';
+  src: url('/fonts/NotoSansKR_Bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'paybooc-Medium';
+  src: url('/fonts/paybooc_OTF_Medium.otf') format('opentype'),
+    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'paybooc-Bold';
+  src: url('/fonts/paybooc_OTF_Bold.otf') format('opentype'),
+    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+html,
+body {
+  margin: 0;
+}
