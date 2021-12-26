@@ -1,12 +1,12 @@
 import React from 'react';
 
-import HeaderText from '../component/HeaderText';
+import IntroMainText from '../component/IntroMainText';
 import StartButton from '../component/StartButton';
 
 const Intro = () => {
   return (
     <>
-      <HeaderText />
+      <IntroMainText />
       <StartButton />
     </>
   );

@@ -13,8 +13,8 @@ const Text = styled.p`
   -webkit-text-stroke: 1px #000;
 `;
 
-const HeaderText = () => {
+const IntroMainText = () => {
   return <Text>Choosing me is a wise choice.</Text>;
 };
 
-export default HeaderText;
+export default IntroMainText;

@@ -66,7 +66,7 @@ const SmileIcon = styled.div`
   }
 `;
 
-const AboutText = () => {
+const AboutMainText = () => {
   return (
     <Wrapper>
       <SmileIcon>
@@ -83,4 +83,4 @@ const AboutText = () => {
   );
 };
 
-export default AboutText;
+export default AboutMainText;
