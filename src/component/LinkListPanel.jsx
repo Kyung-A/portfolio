@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { IoLogoInstagram } from 'react-icons/io';
-import { VscGithubAlt, VscMail } from 'react-icons/vsc';
-import { useLocation } from 'react-router-dom';
+import { VscGithubAlt, VscMail, VscBook } from 'react-icons/vsc';
+import { Link, useLocation } from 'react-router-dom';
 
 /* Component Style */
 const Wrapper = styled.article`
@@ -20,16 +19,19 @@ const LinkList = styled.ul`
 const LinkItem = styled.li`
   width: 25px;
   height: 25px;
-  cursor: pointer;
   margin-bottom: 17px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover svg {
+      fill: #085afa;
+    }
+  }
 
   svg {
     width: 100%;
     height: 100%;
-  }
-
-  &:hover svg {
-    fill: #085afa;
   }
 `;
 
@@ -53,15 +55,27 @@ const LinkListPanel = () => {
 
       <LinkList>
         <LinkItem>
-          <IoLogoInstagram />
+          <Link to="https://kyung-a.tistory.com/">
+            <VscBook />
+          </Link>
         </LinkItem>
 
         <LinkItem>
-          <VscGithubAlt />
+          <Link to="https://github.com/Kyung-A">
+            <VscGithubAlt />
+          </Link>
         </LinkItem>
 
         <LinkItem>
-          <VscMail />
+          <Link
+            to="#"
+            onClick={(e) => {
+              window.location = 'mailto:nek1717@naver.com';
+              e.preventDefault();
+            }}
+          >
+            <VscMail />
+          </Link>
         </LinkItem>
       </LinkList>
     </Wrapper>
