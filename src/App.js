@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Intro from './page/Intro';
 import About from './page/About';
 import LinkListPanel from './component/LinkListPanel';
+import Project from './page/Project';
 
 /* Component Style */
 const Container = styled.main`
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
       </Routes>
 
       <LinkListPanel />

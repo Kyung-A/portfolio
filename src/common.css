@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../public/fonts/Montserrat-Black.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Cafe24SsurroundAir';
   src: url('../public/fonts/Cafe24SsurroundAir.ttf') format('opentype');
   font-weight: normal;
