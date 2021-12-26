@@ -55,15 +55,19 @@ const LinkListPanel = () => {
 
       <LinkList>
         <LinkItem>
-          <Link to="https://kyung-a.tistory.com/">
+          <a
+            href="https://kyung-a.tistory.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <VscBook />
-          </Link>
+          </a>
         </LinkItem>
 
         <LinkItem>
-          <Link to="https://github.com/Kyung-A">
+          <a href="https://github.com/Kyung-A" target="_blank" rel="noreferrer">
             <VscGithubAlt />
-          </Link>
+          </a>
         </LinkItem>
 
         <LinkItem>

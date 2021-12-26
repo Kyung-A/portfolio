@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
 import { projectList, studyList } from '../db';
@@ -221,12 +220,14 @@ const List = () => {
         <p className="item-position">{projectItem.position}</p>
         <p className="item-lang">{projectItem.lang}</p>
         <p className="item-description">{projectItem.description}</p>
-        <Link
+        <a
           className={projectItem.url === null ? 'item-url null' : 'item-url'}
-          to={`${projectItem.url}`}
+          href={`${projectItem.url}`}
+          target="_blank"
+          rel="noreferrer"
         >
           {projectItem.url}
-        </Link>
+        </a>
       </div>
     </Item>
   ));
@@ -240,9 +241,14 @@ const List = () => {
       <div>
         <p className="item-title">{studyItem.title}</p>
         <p className="item-description">{studyItem.description}</p>
-        <Link className="item-url" to={`${studyItem.url}`}>
+        <a
+          className="item-url"
+          href={`${studyItem.url}`}
+          target="_blank"
+          rel="noreferrer"
+        >
           {studyItem.url}
-        </Link>
+        </a>
       </div>
     </Item>
   ));
