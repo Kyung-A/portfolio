@@ -24,14 +24,14 @@ const Popup = styled.div`
   width: 35vw;
   height: 40vh;
   background-color: #fff;
-  border: 3px solid #d8fa08;
+  border: 0.21vw solid #d8fa08;
   overflow: hidden;
   border-top: none;
 `;
 
 const PopupHeader = styled.div`
-  height: 10%;
-  max-height: 32px;
+  height: 8%;
+  min-height: 25px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -41,9 +41,10 @@ const PopupHeader = styled.div`
 `;
 
 const CloseButton = styled.button`
-  width: 100px;
+  width: 5.5vw;
   height: 100%;
   text-align: left;
+  font-size: 0.7vw;
   letter-spacing: 3px;
   font-family: 'Cafe24SsurroundAir';
   border: 0;
@@ -57,6 +58,7 @@ const PopupSection = styled.div`
   box-sizing: border-box;
 
   & > p {
+    font-size: 0.9vw;
     font-family: 'Cafe24SsurroundAir';
     margin: 0;
     letter-spacing: 2px;
@@ -85,6 +87,8 @@ const TextRolling = styled.div`
   }
 
   .text-rolling-list {
+    display: flex;
+    align-items: center;
     width: 100000px;
     height: 100%;
     list-style: none;
@@ -94,7 +98,7 @@ const TextRolling = styled.div`
 
   .text-rolling-item {
     display: inline-block;
-    font-size: 15px;
+    font-size: 0.7vw;
     font-family: 'Cafe24SsurroundAir';
     letter-spacing: 2px;
     animation-duration: 60s;
@@ -105,6 +109,7 @@ const TextRolling = styled.div`
 `;
 
 const SectionTitle = styled.h3`
+  font-size: 1.1vw;
   margin: 0;
   letter-spacing: 2px;
   font-family: 'Cafe24SsurroundAir';
@@ -121,6 +126,7 @@ const CareerList = styled.ul`
 
   p {
     margin: 0;
+    font-size: 0.9vw;
     padding-left: 18px;
     letter-spacing: 2px;
     line-height: 1.8;
@@ -129,6 +135,7 @@ const CareerList = styled.ul`
       display: flex;
       align-items: center;
       padding-left: 30px;
+      font-size: 0.9vw;
 
       svg {
         width: 18px;
@@ -166,8 +173,8 @@ const SkillItem = styled.li`
   margin: 3px 5px;
   border: 1px solid #000;
   letter-spacing: 2px;
+  font-size: 0.7vw;
   font-family: 'Cafe24SsurroundAir';
-  font-size: 13px;
 
   svg {
     width: 18px;

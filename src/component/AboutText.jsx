@@ -20,7 +20,7 @@ const TopText = styled.h2`
   font-size: 8.8vw;
   letter-spacing: -7px;
   font-family: 'Montserrat-BlackItalic';
-  -webkit-text-stroke: 1px #085afa;
+  -webkit-text-stroke: 0.06vw #085afa;
   z-index: 50;
 `;
 
@@ -40,7 +40,7 @@ const BottomText = styled.h2`
   white-space: nowrap;
   letter-spacing: -10px;
   font-family: 'Montserrat-BlackItalic';
-  -webkit-text-stroke: 1px #085afa;
+  -webkit-text-stroke: 0.06vw #085afa;
 
   span {
     color: #085afa;
