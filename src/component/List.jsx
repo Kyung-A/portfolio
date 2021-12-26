@@ -131,6 +131,10 @@ const Item = styled.li`
     color: #000;
     z-index: 10;
 
+    &:hover {
+      color: #085afa;
+    }
+
     &::before {
       position: absolute;
       bottom: 0;
