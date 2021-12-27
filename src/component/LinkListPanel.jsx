@@ -17,8 +17,8 @@ const LinkList = styled.ul`
 `;
 
 const LinkItem = styled.li`
-  width: 25px;
-  height: 25px;
+  width: 1.7vw;
+  height: 3.3vh;
   margin-bottom: 17px;
 
   a {
@@ -37,8 +37,8 @@ const LinkItem = styled.li`
 
 const Bar = styled.span`
   display: block;
-  width: 1px;
-  height: 55px;
+  width: 0.1vw;
+  height: 8vh;
   background-color: #000;
   margin: 0px auto 15px;
 `;
