@@ -3,13 +3,13 @@ import React from 'react';
 import AboutPopup from '../component/AboutPopup';
 import AboutMainText from '../component/AboutMainText';
 import ProfileImg from '../component/ProfileImg';
-import ProjectMoveButton from '../component/ProjectMoveButton';
+import ProjectMoveLink from '../component/ProjectMoveLink';
 
 const About = () => {
   return (
     <>
       <AboutMainText />
-      <ProjectMoveButton />
+      <ProjectMoveLink />
       <ProfileImg />
       <AboutPopup />
     </>

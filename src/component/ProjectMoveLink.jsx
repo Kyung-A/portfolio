@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const ProjectMoveButton = () => {
+const ProjectMoveLink = () => {
   return (
     <Wrapper>
       <Link to="/project">
@@ -76,4 +76,4 @@ const ProjectMoveButton = () => {
   );
 };
 
-export default ProjectMoveButton;
+export default ProjectMoveLink;
