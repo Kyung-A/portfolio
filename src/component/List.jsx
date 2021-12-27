@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import { projectList, studyList } from '../db';
+import IntroMoveLink from './IntroMoveLink';
 
 /* Component Style */
 const Wrapper = styled.div`
@@ -19,19 +20,18 @@ const ProjectListWrapper = styled.article`
   height: 65vh;
   background-color: #fff;
   border: 0.21vw solid #d8fa08;
-  overflow: hidden;
   border-top: none;
   margin-right: 3vw;
 `;
 
 const StudyListWrapper = styled.article`
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 33vw;
   height: 65vh;
   background-color: #fff;
   border: 0.21vw solid #d8fa08;
-  overflow: hidden;
   border-top: none;
 `;
 
@@ -295,6 +295,7 @@ const List = () => {
       </ProjectListWrapper>
 
       <StudyListWrapper>
+        <IntroMoveLink />
         <ItemListHeader>X CLOSE</ItemListHeader>
         <ItemList>{study}</ItemList>
         <ItemListFooter>
