@@ -8,9 +8,9 @@ const Text = styled.p`
   top: 20px;
   margin: 0;
   color: transparent;
-  font-size: 25px;
+  font-size: 1.7vw;
   font-family: 'Montserrat-BlackItalic';
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 0.06vw #000;
 `;
 
 const IntroMainText = () => {
