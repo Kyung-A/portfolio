@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const MainText = styled.div`
   width: 22vw;
   line-height: 5.5vh;
-  margin: 40px auto 0px;
+  margin: 2vw auto 0px;
   padding: 1vw 3.5vh 1.5vw 3.5vh;
   color: transparent;
   letter-spacing: -0.1vw;
