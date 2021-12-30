@@ -13,6 +13,8 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
+const WrapperInner = styled.div``;
+
 const Button = styled.button`
   position: absolute;
   top: 50%;
@@ -46,34 +48,40 @@ const StartButton = () => {
 
   const handleMouseDown = () => {
     startButtonImg.current.src = '/images/start_button_02.png';
-    characterImg.current.src = '/images/character_02.png';
   };
 
   const handleMouseUp = () => {
     startButtonImg.current.src = '/images/start_button_01.png';
-    characterImg.current.src = '/images/character_01.png';
 
     wrapper.current.style.opacity = '0';
     wrapper.current.style.transition = 'all 0.5s ease-in-out';
 
-    window.setTimeout(() => {
-      navigate('/about');
-    }, 800);
+    navigate('/about');
+  };
+
+  const handleMouseOver = () => {
+    characterImg.current.src = '/images/character_02.png';
+  };
+
+  const handleMouseOut = () => {
+    characterImg.current.src = '/images/character_01.png';
   };
 
   return (
     <Wrapper ref={wrapper}>
-      <Button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
-        <img
-          src="/images/start_button_01.png"
-          alt="시작 버튼"
-          ref={startButtonImg}
-        />
-      </Button>
+      <WrapperInner onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+        <Button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+          <img
+            src="/images/start_button_01.png"
+            alt="시작 버튼"
+            ref={startButtonImg}
+          />
+        </Button>
 
-      <ImgWrapper>
-        <img src="/images/character_01.png" alt="캐릭터" ref={characterImg} />
-      </ImgWrapper>
+        <ImgWrapper>
+          <img src="/images/character_01.png" alt="캐릭터" ref={characterImg} />
+        </ImgWrapper>
+      </WrapperInner>
     </Wrapper>
   );
 };

@@ -1,11 +1,8 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Intro from './pages/Intro';
-import About from './pages/About';
+import Transition from './components/Transition';
 import LinkListPanel from './components/LinkListPanel';
-import Project from './pages/Project';
 
 /* Component Style */
 const Container = styled.main`
@@ -19,12 +16,7 @@ const Container = styled.main`
 function App() {
   return (
     <Container>
-      <Routes>
-        <Route path="/" element={<Intro />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/project" element={<Project />} />
-      </Routes>
-
+      <Transition />
       <LinkListPanel />
     </Container>
   );
