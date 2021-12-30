@@ -2,10 +2,10 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Intro from './page/Intro';
-import About from './page/About';
-import LinkListPanel from './component/LinkListPanel';
-import Project from './page/Project';
+import Intro from './pages/Intro';
+import About from './pages/About';
+import LinkListPanel from './components/LinkListPanel';
+import Project from './pages/Project';
 
 /* Component Style */
 const Container = styled.main`

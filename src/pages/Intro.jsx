@@ -1,7 +1,7 @@
 import React from 'react';
 
-import IntroMainText from '../component/IntroMainText';
-import StartButton from '../component/StartButton';
+import IntroMainText from '../components/IntroMainText';
+import StartButton from '../components/StartButton';
 
 const Intro = () => {
   return (

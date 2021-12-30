@@ -1,7 +1,7 @@
 import React from 'react';
 
-import List from '../component/List';
-import ProjectMainText from '../component/ProjectMainText';
+import List from '../components/List';
+import ProjectMainText from '../components/ProjectMainText';
 
 const Project = () => {
   return (
