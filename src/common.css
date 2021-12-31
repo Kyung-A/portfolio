@@ -24,32 +24,26 @@ body {
   margin: 0;
 }
 
-.transition-group{
+.transition-group {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.page-animation{
-  width: 100%;
-  height: 100%;
-}
-
-
-.page-animation-enter {
+.fade-enter {
   opacity: 0;
 }
 
-.page-animation-enter-active {
-  opacity: 0;
+.fade-enter-active {
+  opacity: 1;
   transition: all 1s ease-in;
 }
 
-.page-animation-exit {
+/* .fade-exit {
   opacity: 1;
 }
 
-.page-animation-exit-active {
+.fade-exit-active {
   opacity: 0;
   transition: all 1s ease-in;
-}
+} */
