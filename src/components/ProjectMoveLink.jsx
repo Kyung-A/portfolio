@@ -37,9 +37,9 @@ const ProjectMoveLink = () => {
           y="0px"
           width="15vw"
           height="25vh"
-          font-size="1.42vw"
+          fontSize="1.42vw"
           viewBox="0 0 360 300"
-          enable-background="new 0 0 300 300"
+          enableBackground="new 0 0 300 300"
           space="preserve"
         >
           <defs>
