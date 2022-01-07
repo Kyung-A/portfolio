@@ -24,7 +24,7 @@ body {
   margin: 0;
 }
 
-.transition-group {
+.transition-group{
   position: relative;
   width: 100%;
   height: 100%;
@@ -39,11 +39,11 @@ body {
   transition: all 1s ease-in;
 }
 
-/* .fade-exit {
+.fade-exit {
   opacity: 1;
 }
 
 .fade-exit-active {
   opacity: 0;
   transition: all 1s ease-in;
-} */
+}

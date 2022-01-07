@@ -11,7 +11,7 @@ const Transition = () => {
 
   return (
     <TransitionGroup className="transition-group">
-      <CSSTransition key={location.pathname} classNames="fade" timeout={300}>
+      <CSSTransition key={location.pathname} classNames="fade" timeout={1000}>
         <Routes location={location}>
           <Route path="/" element={<Intro />} />
           <Route path="/about" element={<About />} />
