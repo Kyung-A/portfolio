@@ -37,7 +37,9 @@ const Wrapper = styled.div`
 const IntroMoveLink = () => {
   return (
     <Wrapper>
-      <Link to="/">Go Home !</Link>
+      <Link to="/" className="cursor-pointer">
+        Go Home !
+      </Link>
     </Wrapper>
   );
 };

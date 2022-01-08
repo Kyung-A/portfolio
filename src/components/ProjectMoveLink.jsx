@@ -48,7 +48,7 @@ const Wrapper = styled.div`
 const ProjectMoveLink = () => {
   return (
     <Wrapper>
-      <Link to="/project">
+      <Link to="/project" className="cursor-pointer">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

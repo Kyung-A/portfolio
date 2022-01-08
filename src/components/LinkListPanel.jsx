@@ -72,13 +72,19 @@ const LinkListPanel = () => {
             href="https://kyung-a.tistory.com/"
             target="_blank"
             rel="noreferrer"
+            className="cursor-pointer"
           >
             <VscBook />
           </a>
         </LinkItem>
 
         <LinkItem>
-          <a href="https://github.com/Kyung-A" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/Kyung-A"
+            target="_blank"
+            rel="noreferrer"
+            className="cursor-pointer"
+          >
             <VscGithubAlt />
           </a>
         </LinkItem>
@@ -90,6 +96,7 @@ const LinkListPanel = () => {
               window.location = 'mailto:nek1717@naver.com';
               e.preventDefault();
             }}
+            className="cursor-pointer"
           >
             <VscMail />
           </Link>

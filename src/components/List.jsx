@@ -297,7 +297,11 @@ const List = () => {
         <p className="item-lang">{projectItem.lang}</p>
         <p className="item-description">{projectItem.description}</p>
         <a
-          className={projectItem.url === null ? 'item-url null' : 'item-url'}
+          className={
+            projectItem.url === null
+              ? 'item-url null'
+              : 'item-url cursor-pointer'
+          }
           href={`${projectItem.url}`}
           target="_blank"
           rel="noreferrer"
@@ -318,7 +322,7 @@ const List = () => {
         <p className="item-title">{studyItem.title}</p>
         <p className="item-description">{studyItem.description}</p>
         <a
-          className="item-url"
+          className="item-url cursor-pointer"
           href={`${studyItem.url}`}
           target="_blank"
           rel="noreferrer"

@@ -25,7 +25,6 @@ const Button = styled.button`
   margin-top: 135px;
   margin-left: -70px;
   width: 100px;
-  cursor: pointer;
   border: 0;
   background-color: transparent;
 
@@ -83,7 +82,11 @@ const StartButton = () => {
   return (
     <Wrapper ref={wrapper}>
       <WrapperInner onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-        <Button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+        <Button
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          className="cursor-pointer"
+        >
           <img
             src="/images/start_button_01.png"
             alt="시작 버튼"
