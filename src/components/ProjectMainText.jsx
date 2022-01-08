@@ -21,6 +21,23 @@ const MainText = styled.div`
     color: #07328a;
     -webkit-text-stroke: 0px;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 350px;
+    padding: 20px 30px 30px 30px;
+    margin: 35px auto 0px;
+    font-size: 3em;
+    line-height: 45px;
+    border: 15px solid #07328a;
+    -webkit-text-stroke: 1px #07328a;
+  }
+
+  @media screen and (max-width: 416px) {
+    width: 300px;
+    font-size: 2.5em;
+    line-height: 35px;
+    padding: 10px 20px 20px 20px;
+  }
 `;
 
 const ProjectMainText = () => {

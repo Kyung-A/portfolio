@@ -16,6 +16,17 @@ const Wrapper = styled.article`
   margin-left: -5vw;
   margin-top: -10vh;
   z-index: 100;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: -2vh;
+    margin-left: -15vw;
+  }
+
+  @media screen and (max-width: 416px) {
+    left: 0%;
+    margin-top: -3vh;
+    margin-left: 5vw;
+  }
 `;
 
 const Popup = styled.div`
@@ -27,6 +38,16 @@ const Popup = styled.div`
   border: 0.21vw solid #d8fa08;
   overflow: hidden;
   border-top: none;
+
+  @media screen and (max-width: 1024px) {
+    width: 50vw;
+    height: 43vh;
+  }
+
+  @media screen and (max-width: 416px) {
+    width: 90vw;
+    height: 45vh;
+  }
 `;
 
 const PopupHeader = styled.div`
@@ -49,6 +70,10 @@ const CloseButton = styled.button`
   font-family: 'Cafe24SsurroundAir';
   border: 0;
   background-color: transparent;
+
+  @media screen and (max-width: 1024px) {
+    width: 80px;
+  }
 `;
 
 const PopupSection = styled.div`
@@ -62,6 +87,15 @@ const PopupSection = styled.div`
     font-family: 'Cafe24SsurroundAir';
     margin: 0;
     letter-spacing: 2px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: 416px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 `;
 
@@ -105,6 +139,10 @@ const TextRolling = styled.div`
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-name: ${textRollingAnimation};
+
+    @media screen and (max-width: 416px) {
+      font-size: 13px;
+    }
   }
 `;
 
@@ -113,6 +151,14 @@ const SectionTitle = styled.h3`
   margin: 0;
   letter-spacing: 2px;
   font-family: 'Cafe24SsurroundAir';
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 416px) {
+    font-size: 20px;
+  }
 `;
 
 const Career = styled.div`
@@ -142,6 +188,14 @@ const CareerList = styled.ul`
         height: 18px;
         margin-right: 5px;
       }
+
+      @media screen and (max-width: 1024px) {
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 15px;
     }
   }
 `;
@@ -180,6 +234,10 @@ const SkillItem = styled.li`
     width: 18px;
     height: 18px;
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 13px;
   }
 `;
 

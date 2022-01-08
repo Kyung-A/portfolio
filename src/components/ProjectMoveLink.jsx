@@ -23,6 +23,26 @@ const Wrapper = styled.div`
       font-weight: bold;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    top: 130px;
+    right: 100px;
+
+    svg {
+      width: 30vw;
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 416px) {
+    top: 170px;
+    right: 15px;
+
+    svg {
+      width: 200px;
+      font-size: 25px;
+    }
+  }
 `;
 
 const ProjectMoveLink = () => {

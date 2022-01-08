@@ -8,6 +8,10 @@ import { Link, useLocation } from 'react-router-dom';
 const Wrapper = styled.article`
   position: absolute;
   right: 30px;
+
+  @media screen and (max-width: 1024px) {
+    right: 20px;
+  }
 `;
 
 const LinkList = styled.ul`
@@ -33,6 +37,11 @@ const LinkItem = styled.li`
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 const Bar = styled.span`
@@ -41,6 +50,10 @@ const Bar = styled.span`
   height: 8vh;
   background-color: #000;
   margin: 0px auto 15px;
+
+  @media screen and (max-width: 1024px) {
+    width: 1px;
+  }
 `;
 
 const LinkListPanel = () => {

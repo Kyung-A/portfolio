@@ -22,6 +22,15 @@ const TopText = styled.h2`
   font-family: 'Montserrat-BlackItalic';
   -webkit-text-stroke: 0.06vw #085afa;
   z-index: 50;
+
+  @media screen and (max-width: 1024px) {
+    top: 0px;
+    left: 0px;
+    line-height: 80px;
+    font-size: 5em;
+    letter-spacing: -3px;
+    -webkit-text-stroke: 1px #085afa;
+  }
 `;
 
 const animate = keyframes`
@@ -46,6 +55,16 @@ const BottomText = styled.h2`
     color: #085afa;
     -webkit-text-stroke: 0;
   }
+
+  @media screen and (max-width: 1024px) {
+    bottom: 0px;
+    font-size: 5em;
+    text-align: right;
+    white-space: initial;
+    line-height: 70px;
+    letter-spacing: -5px;
+    -webkit-text-stroke: 1px #085afa;
+  }
 `;
 
 const SmileIcon = styled.div`
@@ -63,6 +82,16 @@ const SmileIcon = styled.div`
     width: 100%;
     height: 100%;
     fill: #085afa;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: -8vh;
+    margin-left: 15vw;
+  }
+
+  @media screen and (max-width: 416px) {
+    margin-top: -10vh;
+    margin-left: 60vw;
   }
 `;
 

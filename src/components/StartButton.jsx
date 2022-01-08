@@ -13,7 +13,10 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const WrapperInner = styled.div``;
+const WrapperInner = styled.div`
+  padding: 0px 20px;
+  box-sizing: border-box;
+`;
 
 const Button = styled.button`
   position: absolute;
@@ -29,12 +32,22 @@ const Button = styled.button`
   img {
     width: 100%;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 80px;
+    margin-top: 100px;
+    margin-left: -40px;
+  }
 `;
 
 const ImgWrapper = styled.div`
   width: 500px;
 
   img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
     width: 100%;
   }
 `;

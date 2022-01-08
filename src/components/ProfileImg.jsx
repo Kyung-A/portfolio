@@ -16,6 +16,18 @@ const Wrapper = styled.article`
   img {
     width: 100%;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 300px;
+    margin-top: -40vh;
+    margin-left: -30vw;
+  }
+
+  @media screen and (max-width: 416px) {
+    width: 200px;
+    margin-top: -30vh;
+    margin-left: -30vw;
+  }
 `;
 
 const ProfileImg = () => {
