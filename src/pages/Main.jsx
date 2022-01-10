@@ -12,7 +12,7 @@ const PageWrapper = styled.div`
   height: 100%;
 `;
 
-const About = () => {
+const Main = () => {
   return (
     <PageWrapper>
       <AboutMainText />
@@ -23,4 +23,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Main;

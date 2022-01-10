@@ -68,7 +68,7 @@ const StartButton = () => {
     wrapper.current.style.opacity = '0';
     wrapper.current.style.transition = 'all 0.5s ease-in-out';
 
-    navigate('/about');
+    navigate('/main');
   };
 
   const handleMouseOver = () => {

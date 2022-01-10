@@ -3,8 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import Intro from '../pages/Intro';
-import About from '../pages/About';
-import Project from '../pages/Project';
+import Main from '../pages/Main';
 
 const Transition = () => {
   const location = useLocation();
@@ -14,8 +13,7 @@ const Transition = () => {
       <CSSTransition key={location.pathname} classNames="fade" timeout={1000}>
         <Routes location={location}>
           <Route path="/" element={<Intro />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Project />} />
+          <Route path="/main" element={<Main />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
