@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import AboutPopup from '../components/AboutPopup';
-import AboutMainText from '../components/AboutMainText';
+import MainText from '../components/MainText';
 import ProfileImg from '../components/ProfileImg';
-import ProjectMoveLink from '../components/ProjectMoveLink';
+import CircleIcon from '../components/CircleIcon';
+import Tabs from '../components/Tabs';
 
 const PageWrapper = styled.div`
   position: absolute;
@@ -15,10 +15,10 @@ const PageWrapper = styled.div`
 const Main = () => {
   return (
     <PageWrapper>
-      <AboutMainText />
-      <ProjectMoveLink />
+      <MainText />
+      <CircleIcon />
       <ProfileImg />
-      <AboutPopup />
+      <Tabs />
     </PageWrapper>
   );
 };

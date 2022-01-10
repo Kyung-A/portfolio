@@ -1,20 +1,51 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
+import { FaSmile } from 'react-icons/fa';
+
 /* Component Style */
+
 const animate = keyframes`
  100% {
     transform: rotate(360deg);
   }
+  `;
+
+const SmileIcon = styled.div`
+  position: absolute;
+  top: 50%;
+  margin-top: -27vh;
+  margin-left: 8vw;
+  z-index: 70;
+  width: 13vw;
+  height: 13vh;
+  animation: ${animate} 10s linear infinite;
+  transform-origin: 50% 50%;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: #085afa;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: -8vh;
+    margin-left: 15vw;
+  }
+
+  @media screen and (max-width: 416px) {
+    margin-top: -10vh;
+    margin-left: 60vw;
+  }
 `;
 
-const Wrapper = styled.div`
+const TextCircleIcon = styled.div`
   position: absolute;
-  top: 50px;
-  right: 300px;
+  top: 50%;
+  left: 0px;
+  margin-top: -7vh;
+  margin-left: 3vw;
   animation: ${animate} 20s linear infinite;
-  z-index: 100;
 
   a {
     display: block;
@@ -45,10 +76,14 @@ const Wrapper = styled.div`
   }
 `;
 
-const ProjectMoveLink = () => {
+const CircleIcon = () => {
   return (
-    <Wrapper>
-      <Link to="/project" className="cursor-pointer">
+    <>
+      <SmileIcon>
+        <FaSmile />
+      </SmileIcon>
+
+      <TextCircleIcon>
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +105,7 @@ const ProjectMoveLink = () => {
             <defs>
               <path
                 id="textPath"
-                d="M 152, 163 m 0, 0 a 60,0 0 0,1 0,0 a 0,180 0 0,1 180,0 "
+                d="M 170, 155 m 0, 0 a 60,0 0 0,1 0,0 a 0,180 0 0,1 180,0 "
               />
             </defs>
           </defs>
@@ -79,21 +114,21 @@ const ProjectMoveLink = () => {
             <use href="#circlePath" fill="none" />
             <text>
               <textPath href="#circlePath">
-                Let's Project! Let's Project! Let's Project! Let's Project!
-                Let's Project! Let's Project! Let's Project! Let's Project!
+                Hello! Are you curious about me? Hello! Are you curious about
+                me?
               </textPath>
             </text>
           </g>
           <g>
             <use href="#textPath" fill="none" />
             <text>
-              <textPath href="#textPath">Click !</textPath>
+              <textPath href="#textPath">: )</textPath>
             </text>
           </g>
         </svg>
-      </Link>
-    </Wrapper>
+      </TextCircleIcon>
+    </>
   );
 };
 
-export default ProjectMoveLink;
+export default CircleIcon;

@@ -5,10 +5,10 @@ import styled from 'styled-components';
 const Wrapper = styled.article`
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin-top: -30vh;
-  margin-left: -26vw;
-  width: 24vw;
+  left: 30%;
+  margin-top: -34vh;
+  margin-left: -13vw;
+  width: 27vw;
   height: 65vh;
   transform: rotate(350deg);
   z-index: 10;

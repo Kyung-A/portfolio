@@ -1,7 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-
-import { FaSmile } from 'react-icons/fa';
+import styled from 'styled-components';
 
 /* Component Style */
 const Wrapper = styled.div`
@@ -12,13 +10,13 @@ const Wrapper = styled.div`
 
 const TopText = styled.h2`
   position: absolute;
-  left: 30px;
-  top: 20px;
-  line-height: 17vh;
+  left: 0px;
+  top: 10px;
+  line-height: 12vh;
   margin: 0;
   color: transparent;
-  font-size: 8.8vw;
-  letter-spacing: -7px;
+  font-size: 7vw;
+  letter-spacing: -5px;
   font-family: 'Montserrat-BlackItalic';
   -webkit-text-stroke: 0.06vw #085afa;
   z-index: 50;
@@ -33,23 +31,18 @@ const TopText = styled.h2`
   }
 `;
 
-const animate = keyframes`
- 100% {
-    transform: rotate(360deg);
-  }
-  `;
-
 const BottomText = styled.h2`
   position: absolute;
   right: 0px;
-  bottom: 20px;
+  bottom: 0px;
   margin: 0;
   color: transparent;
-  font-size: 8.8vw;
+  font-size: 8vw;
   white-space: nowrap;
   letter-spacing: -10px;
   font-family: 'Montserrat-BlackItalic';
   -webkit-text-stroke: 0.06vw #085afa;
+  z-index: 510;
 
   span {
     color: #085afa;
@@ -67,41 +60,9 @@ const BottomText = styled.h2`
   }
 `;
 
-const SmileIcon = styled.div`
-  position: absolute;
-  top: 50%;
-  margin-top: -19vh;
-  margin-left: 15vw;
-  z-index: 70;
-  width: 12vw;
-  height: 12vh;
-  animation: ${animate} 10s linear infinite;
-  transform-origin: 50% 50%;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    fill: #085afa;
-  }
-
-  @media screen and (max-width: 1024px) {
-    margin-top: -8vh;
-    margin-left: 15vw;
-  }
-
-  @media screen and (max-width: 416px) {
-    margin-top: -10vh;
-    margin-left: 60vw;
-  }
-`;
-
-const AboutMainText = () => {
+const MainText = () => {
   return (
     <Wrapper>
-      <SmileIcon>
-        <FaSmile />
-      </SmileIcon>
-
       <TopText>
         Hello. I'm <br /> EunGyeong Nam.
       </TopText>
@@ -112,4 +73,4 @@ const AboutMainText = () => {
   );
 };
 
-export default AboutMainText;
+export default MainText;

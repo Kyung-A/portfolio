@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import IntroMainText from '../components/IntroMainText';
+import IntroText from '../components/IntroText';
 import StartButton from '../components/StartButton';
 
 const PageWrapper = styled.div`
@@ -13,7 +13,7 @@ const PageWrapper = styled.div`
 const Intro = () => {
   return (
     <PageWrapper>
-      <IntroMainText />
+      <IntroText />
       <StartButton />
     </PageWrapper>
   );

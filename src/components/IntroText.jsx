@@ -21,8 +21,8 @@ const Text = styled.p`
   }
 `;
 
-const IntroMainText = () => {
+const IntroText = () => {
   return <Text>Choosing me is a wise choice.</Text>;
 };
 
-export default IntroMainText;
+export default IntroText;
