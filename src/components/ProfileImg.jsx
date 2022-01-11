@@ -39,7 +39,10 @@ const Wrapper = styled.article`
 const ProfileImg = () => {
   return (
     <Wrapper>
-      <img src="/images/profile.jpg" alt="프로필 이미지" />
+      <img
+        src={process.env.PUBLIC_URL + '/images/profile.jpg'}
+        alt="프로필 이미지"
+      />
     </Wrapper>
   );
 };

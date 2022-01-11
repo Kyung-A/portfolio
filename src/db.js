@@ -2,7 +2,7 @@ export const projectList = [
   {
     id: 1,
     title: '피타그래프 서비스 리뉴얼',
-    image: '/images/pytha.png',
+    image: `${process.env.PUBLIC_URL + '/images/pytha.png'}`,
     date: '2021.01월~현재진행중',
     descriptionList: [
       {
@@ -32,7 +32,7 @@ export const projectList = [
   {
     id: 2,
     title: '동대문구청 데이터 플랫폼',
-    image: '/images/dongdaemun.jpg',
+    image: `${process.env.PUBLIC_URL + '/images/dongdaemun.jpg'}`,
     date: '2021.11월~2021.12월 (약 1개월)',
     descriptionList: [
       {
@@ -50,7 +50,7 @@ export const projectList = [
   {
     id: 3,
     title: '동작구청 우리동네지도',
-    image: '/images/dongjak.png',
+    image: `${process.env.PUBLIC_URL + '/images/dongjak.png'}`,
     date: '2021.11월~2021.12월 (약 1개월)',
     descriptionList: [
       {
@@ -68,7 +68,7 @@ export const projectList = [
   {
     id: 4,
     title: '소상공인 버팀목자금 대시보드',
-    image: '/images/nhmon.png',
+    image: `${process.env.PUBLIC_URL + '/images/nhmon.png'}`,
     date: '2020.12월~2021.01월 (약 1개월)',
     descriptionList: [
       {
@@ -84,7 +84,7 @@ export const projectList = [
   {
     id: 5,
     title: '소상공인 빅데이터 저장소',
-    image: '/images/bigcen.png',
+    image: `${process.env.PUBLIC_URL + '/images/bigcen.png'}`,
     date: '2020.12월~2021.01월 (약 1개월)',
     descriptionList: [
       {

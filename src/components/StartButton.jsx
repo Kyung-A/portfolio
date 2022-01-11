@@ -61,11 +61,15 @@ const StartButton = () => {
   const characterImg = useRef();
 
   const handleMouseDown = () => {
-    startButtonImg.current.src = '/images/start_button_02.png';
+    startButtonImg.current.src = `${
+      process.env.PUBLIC_URL + '/images/start_button_02.png'
+    }`;
   };
 
   const handleMouseUp = () => {
-    startButtonImg.current.src = '/images/start_button_01.png';
+    startButtonImg.current.src = `${
+      process.env.PUBLIC_URL + '/images/start_button_01.png'
+    }`;
 
     wrapper.current.style.opacity = '0';
     wrapper.current.style.transition = 'all 0.5s ease-in-out';
@@ -74,11 +78,15 @@ const StartButton = () => {
   };
 
   const handleMouseOver = () => {
-    characterImg.current.src = '/images/character_02.png';
+    characterImg.current.src = `${
+      process.env.PUBLIC_URL + '/images/character_02.png'
+    }`;
   };
 
   const handleMouseOut = () => {
-    characterImg.current.src = '/images/character_01.png';
+    characterImg.current.src = `${
+      process.env.PUBLIC_URL + '/images/character_01.png'
+    }`;
   };
 
   return (
@@ -90,14 +98,18 @@ const StartButton = () => {
           className="cursor-pointer"
         >
           <img
-            src="/images/start_button_01.png"
+            src={process.env.PUBLIC_URL + '/images/start_button_01.png'}
             alt="시작 버튼"
             ref={startButtonImg}
           />
         </Button>
 
         <ImgWrapper>
-          <img src="/images/character_01.png" alt="캐릭터" ref={characterImg} />
+          <img
+            src={process.env.PUBLIC_URL + '/images/character_01.png'}
+            alt="캐릭터"
+            ref={characterImg}
+          />
         </ImgWrapper>
       </WrapperInner>
     </Wrapper>
