@@ -16,7 +16,7 @@ const SmileIcon = styled(Link)`
   position: absolute;
   top: 50%;
   margin-top: -27vh;
-  margin-left: 8vw;
+  margin-left: 6vw;
   z-index: 70;
   width: 12vw;
   height: 12vh;

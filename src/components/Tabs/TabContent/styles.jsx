@@ -27,6 +27,7 @@ export const Section = styled.div`
     font-size: 1vw;
     line-height: 1.8;
     font-family: 'Cafe24SsurroundAir';
+    word-break: keep-all;
     margin: 0;
     letter-spacing: 2px;
 
@@ -87,7 +88,7 @@ export const CareerList = styled.ul`
     letter-spacing: 2px;
 
     span {
-      display-block: inline-block;
+      display: inline-block;
       color: #ed770d;
       font-weight: bold;
       margin-right: 20px;
@@ -257,7 +258,7 @@ export const DescriptionList = styled.ul`
 
 export const DescriptionItem = styled.li`
   font-size: 1vw;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   font-family: 'SCDream3';
   word-break: keep-all;
 
