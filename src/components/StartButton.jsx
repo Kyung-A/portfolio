@@ -27,6 +27,7 @@ const Button = styled.button`
   width: 100px;
   border: 0;
   background-color: transparent;
+  transition: all 0.3s;
 
   img {
     width: 100%;
@@ -41,6 +42,7 @@ const Button = styled.button`
 
 const ImgWrapper = styled.div`
   width: 500px;
+  transition: all 0.3s;
 
   img {
     width: 100%;

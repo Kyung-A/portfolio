@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import { FaSmile } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 /* Component Style */
 
@@ -11,16 +12,18 @@ const animate = keyframes`
   }
   `;
 
-const SmileIcon = styled.div`
+const SmileIcon = styled(Link)`
   position: absolute;
   top: 50%;
   margin-top: -27vh;
   margin-left: 8vw;
   z-index: 70;
-  width: 13vw;
-  height: 13vh;
+  width: 12vw;
+  height: 12vh;
   animation: ${animate} 10s linear infinite;
   transform-origin: 50% 50%;
+  transition: all 0.3s;
+  z-index: 900;
 
   svg {
     width: 100%;
@@ -29,13 +32,17 @@ const SmileIcon = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    margin-top: -8vh;
-    margin-left: 15vw;
+    width: 10vw;
+    height: 10vh;
+    margin-top: -33vh;
   }
 
-  @media screen and (max-width: 416px) {
-    margin-top: -10vh;
-    margin-left: 60vw;
+  @media screen and (max-width: 767px) {
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 8vw;
   }
 `;
 
@@ -46,6 +53,8 @@ const TextCircleIcon = styled.div`
   margin-top: -7vh;
   margin-left: 3vw;
   animation: ${animate} 20s linear infinite;
+  z-index: 10;
+  transition: all 0.3s;
 
   a {
     display: block;
@@ -56,21 +65,22 @@ const TextCircleIcon = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    top: 130px;
-    right: 100px;
+    margin-top: 10vh;
+    margin-left: -3vw;
 
     svg {
-      width: 30vw;
+      width: 180px;
       font-size: 20px;
     }
   }
 
-  @media screen and (max-width: 416px) {
-    top: 170px;
-    right: 15px;
+  @media screen and (max-width: 767px) {
+    top: 75%;
+    margin-top: 0;
+    margin-left: -15vw;
 
     svg {
-      width: 200px;
+      width: 250px;
       font-size: 25px;
     }
   }
@@ -79,7 +89,7 @@ const TextCircleIcon = styled.div`
 const CircleIcon = () => {
   return (
     <>
-      <SmileIcon>
+      <SmileIcon to="/" className="cursor-pointer">
         <FaSmile />
       </SmileIcon>
 

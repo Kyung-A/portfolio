@@ -10,6 +10,7 @@ const TabBtn = styled.button`
   background-color: transparent;
   border: 0;
   margin-right: 20px;
+  transition: all 0.3s;
 
   &::before {
     content: '';
@@ -31,6 +32,23 @@ const TabBtn = styled.button`
     width: 100%;
     height: 0.3vh;
     background-color: #07328a;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+    background-color: #eab3d7;
+
+    &::before {
+      height: 3px;
+    }
+
+    &::after {
+      height: 3px;
+    }
   }
 `;
 

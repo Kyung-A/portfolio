@@ -24,10 +24,15 @@ export const Section = styled.div`
   box-sizing: border-box;
 
   & > p {
-    font-size: 0.9vw;
+    font-size: 1vw;
+    line-height: 1.8;
     font-family: 'Cafe24SsurroundAir';
     margin: 0;
     letter-spacing: 2px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -47,10 +52,6 @@ export const SectionTitle = styled.h3`
   font-family: 'Cafe24SsurroundAir';
 
   @media screen and (max-width: 1024px) {
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: 416px) {
     font-size: 20px;
   }
 `;
@@ -77,10 +78,6 @@ export const CareerList = styled.ul`
       height: 20px;
       margin-right: 5px;
     }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 15px;
-    }
   }
 
   p {
@@ -95,9 +92,15 @@ export const CareerList = styled.ul`
       font-weight: bold;
       margin-right: 20px;
     }
+  }
 
-    @media screen and (max-width: 1024px) {
-      font-size: 15px;
+  @media screen and (max-width: 1024px) {
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 `;
@@ -149,13 +152,17 @@ export const ListItem = styled.li`
   padding: 30px 15px;
   border-bottom: 3px dashed #ebebeb;
   box-sizing: border-box;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const ListTitle = styled.div`
   width: 35%;
 
   .item-image {
-    wdith: 100%;
+    width: 100%;
     height: 130px;
     background-repeat: no-repeat;
     background-position: center;
@@ -186,6 +193,7 @@ export const ListTitle = styled.div`
   .item-date {
     font-size: 1vw;
     margin-top: 10px;
+    word-break: keep-all;
   }
 
   .item-url {
@@ -204,15 +212,47 @@ export const ListTitle = styled.div`
   .item-url.null:hover {
     color: #808080;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+
+    .item-image {
+      height: 250px;
+      border: 1px solid #e2e2e2;
+    }
+
+    .item-title {
+      font-size: 22px;
+    }
+
+    .item-date {
+      font-size: 18px;
+    }
+
+    .item-url {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
 `;
 
 export const DescriptionListWrapper = styled.div`
   width: 65%;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 `;
 
 export const DescriptionList = styled.ul`
   margin: 0;
   list-style: disc;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0;
+    padding-left: 20px;
+  }
 `;
 
 export const DescriptionItem = styled.li`
@@ -220,6 +260,10 @@ export const DescriptionItem = styled.li`
   margin-bottom: 8px;
   font-family: 'SCDream3';
   word-break: keep-all;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 17px;
+  }
 `;
 
 export const Description = styled.p`
@@ -228,4 +272,9 @@ export const Description = styled.p`
   font-size: 1vw;
   font-family: 'SCDream3';
   word-break: keep-all;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 0px;
+    font-size: 17px;
+  }
 `;

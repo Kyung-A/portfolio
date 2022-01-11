@@ -11,6 +11,7 @@ const Text = styled.p`
   font-size: 1.7vw;
   font-family: 'Montserrat-BlackItalic';
   -webkit-text-stroke: 0.06vw #000;
+  transition: all 0.3s;
 
   @media screen and (max-width: 1024px) {
     left: 10px;

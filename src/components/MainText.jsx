@@ -20,13 +20,20 @@ const TopText = styled.h2`
   font-family: 'Montserrat-BlackItalic';
   -webkit-text-stroke: 0.06vw #085afa;
   z-index: 50;
+  transition: all 0.3s;
 
   @media screen and (max-width: 1024px) {
+    line-height: 60px;
+    letter-spacing: -1px;
+    -webkit-text-stroke: 1px #085afa;
+  }
+
+  @media screen and (max-width: 767px) {
     top: 0px;
     left: 0px;
-    line-height: 80px;
-    font-size: 5em;
-    letter-spacing: -3px;
+    line-height: 40px;
+    font-size: 3em;
+    letter-spacing: -1px;
     -webkit-text-stroke: 1px #085afa;
   }
 `;
@@ -43,6 +50,7 @@ const BottomText = styled.h2`
   font-family: 'Montserrat-BlackItalic';
   -webkit-text-stroke: 0.06vw #085afa;
   z-index: 510;
+  transition: all 0.3s;
 
   span {
     color: #085afa;
@@ -50,12 +58,17 @@ const BottomText = styled.h2`
   }
 
   @media screen and (max-width: 1024px) {
-    bottom: 0px;
-    font-size: 5em;
+    letter-spacing: -5px;
+    -webkit-text-stroke: 1px #085afa;
+  }
+
+  @media screen and (max-width: 767px) {
+    bottom: 10px;
+    font-size: 3em;
     text-align: right;
     white-space: initial;
-    line-height: 70px;
-    letter-spacing: -5px;
+    line-height: 40px;
+    letter-spacing: -1px;
     -webkit-text-stroke: 1px #085afa;
   }
 `;

@@ -16,6 +16,17 @@ const Wrapper = styled.div`
   background-color: #eab3d7;
   box-shadow: -5px 3px 13px 0px rgba(231 128 196 / 62%);
   z-index: 500;
+  transition: all 0.3s;
+
+  @media screen and (max-width: 1024px) {
+    width: 60vw;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    background-color: transparent;
+    box-shadow: none;
+  }
 `;
 
 const WrapperInner = styled.div`
@@ -27,6 +38,15 @@ const WrapperInner = styled.div`
   height: 100%;
   padding-top: 50px;
   box-sizing: border-box;
+  transition: all 0.3s;
+
+  @media screen and (max-width: 1024px) {
+    width: 85%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 90%;
+  }
 `;
 
 const TabButtonGroup = styled.ul`
@@ -44,6 +64,11 @@ const TabButtonGroup = styled.ul`
 const TabContentGroup = styled.div`
   width: 100%;
   height: 70vh;
+  transition: all 0.3s;
+
+  @media screen and (max-width: 767px) {
+    height: 75vh;
+  }
 `;
 
 /* Component */

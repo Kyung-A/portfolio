@@ -44,8 +44,8 @@ const TextRollingWrapper = styled.div`
     animation-iteration-count: infinite;
     animation-name: ${textRollingAnimation};
 
-    @media screen and (max-width: 416px) {
-      font-size: 13px;
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
     }
   }
 `;
