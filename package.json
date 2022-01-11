@@ -20,8 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://Kyung-A.github.io/2021ver-portfolio"
+  "homepage": "http://Kyung-A.github.io/portfolio"
 }
