@@ -19,17 +19,28 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SCDream3';
+  src: url('../public/fonts/SCDream3.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='40' viewport='0 0 100 100' style='fill:black;font-size:24px;transform:rotate(120deg);'><text y='72%'>🍕</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='40' viewport='0 0 100 100' style='fill:black;font-size:24px;transform:rotate(120deg);'><text y='72%'>🍕</text></svg>")
+      16 0,
+    auto;
 }
 
 .cursor-pointer {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='40' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='54%'>💡</text></svg>") 16 0, pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='40' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='54%'>💡</text></svg>")
+      16 0,
+    pointer;
 }
 
-.transition-group{
+.transition-group {
   position: relative;
   width: 100%;
   height: 100%;

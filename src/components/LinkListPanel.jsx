@@ -8,6 +8,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Wrapper = styled.article`
   position: absolute;
   right: 30px;
+  z-index: 900;
 
   @media screen and (max-width: 1024px) {
     right: 20px;

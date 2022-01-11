@@ -23,7 +23,7 @@ const WrapperInner = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
   height: 100%;
   padding-top: 50px;
   box-sizing: border-box;
@@ -32,7 +32,7 @@ const WrapperInner = styled.div`
 const TabButtonGroup = styled.ul`
   display: flex;
   width: 100%;
-  height: 5%;
+  height: 5vh;
   margin: 0;
   padding: 0;
 
@@ -43,7 +43,7 @@ const TabButtonGroup = styled.ul`
 
 const TabContentGroup = styled.div`
   width: 100%;
-  height: 75%;
+  height: 70vh;
 `;
 
 /* Component */

@@ -35,7 +35,8 @@ const TextRollingWrapper = styled.div`
 
   .text-rolling-item {
     display: inline-block;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
+    font-style: italic;
     font-family: 'Cafe24SsurroundAir';
     letter-spacing: 2px;
     animation-duration: 60s;

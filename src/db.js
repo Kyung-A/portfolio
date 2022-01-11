@@ -3,8 +3,8 @@ export const projectList = [
     id: 1,
     title: '피타그래프 서비스 리뉴얼',
     image: '/images/pytha.png',
-    data: '2021.01월~현재진행중',
-    description: [
+    date: '2021.01월~현재진행중',
+    descriptionList: [
       {
         item: '자사 서비스 리뉴얼 초기 기획 담당 ',
       },
@@ -32,9 +32,9 @@ export const projectList = [
   {
     id: 2,
     title: '동대문구청 데이터 플랫폼',
-    image: null,
-    data: '2021.11월~2021.12월 (약 1개월)',
-    description: [
+    image: '/images/dongdaemun.jpg',
+    date: '2021.11월~2021.12월 (약 1개월)',
+    descriptionList: [
       {
         item: '동대문구청의 각종 공공시설 정보를 제공하는 GIS 기반 시각화 웹 서비스',
       },
@@ -51,9 +51,9 @@ export const projectList = [
   {
     id: 3,
     title: '동작구청 우리동네지도',
-    image: null,
-    data: '2021.11월~2021.12월 (약 1개월)',
-    description: [
+    image: '/images/dongjak.png',
+    date: '2021.11월~2021.12월 (약 1개월)',
+    descriptionList: [
       {
         item: '동작구의 각종 공공시설 정보를 제공하는 GIS 기반 시각화 웹 서비스',
       },
@@ -68,8 +68,8 @@ export const projectList = [
     id: 4,
     title: '소상공인 버팀목자금 대시보드',
     image: '/images/nhmon.png',
-    data: '2020.12월~2021.01월 (약 1개월)',
-    description: [
+    date: '2020.12월~2021.01월 (약 1개월)',
+    descriptionList: [
       {
         item: '소상공인진흥공단에서 버팀목자금 관리를 위한 관리자 대시보드 화면',
       },
@@ -84,12 +84,12 @@ export const projectList = [
     id: 5,
     title: '소상공인 빅데이터 저장소',
     image: '/images/bigcen.png',
-    data: '2020.12월~2021.01월 (약 1개월)',
-    description: [
+    date: '2020.12월~2021.01월 (약 1개월)',
+    descriptionList: [
       { item: '상가업소 정보 시각화 제공을 위한 웹 서비스' },
       { item: '웹 디자인 및 JSP 퍼블리싱 진행' },
     ],
-    url: 'https://sdatadam.co.kr/main',
+    url: 'https://sdatedam.co.kr/main',
   },
 ];
 

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const TabBtn = styled.button`
   position: relative;
   color: #07328a;
-  font-size: 17px;
+  font-size: 1.1vw;
   font-family: 'Montserrat-BlackItalic';
   background-color: transparent;
   border: 0;
@@ -14,6 +14,7 @@ const TabBtn = styled.button`
   &::before {
     content: '';
     position: absolute;
+    top: -3px;
     left: 0;
     display: inline-block;
     width: 100%;
@@ -25,7 +26,7 @@ const TabBtn = styled.button`
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -3px;
     display: inline-block;
     width: 100%;
     height: 0.3vh;

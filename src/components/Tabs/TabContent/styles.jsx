@@ -28,19 +28,10 @@ export const Section = styled.div`
     font-family: 'Cafe24SsurroundAir';
     margin: 0;
     letter-spacing: 2px;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 15px;
-    }
-
-    @media screen and (max-width: 416px) {
-      font-size: 18px;
-      line-height: 30px;
-    }
   }
 `;
 
-export const ItemListSection = styled.ul`
+export const ListWrapper = styled.ul`
   flex: 1;
   margin: 0;
   padding: 0;
@@ -65,7 +56,7 @@ export const SectionTitle = styled.h3`
 `;
 
 export const Career = styled.div`
-  margin-top: 40px;
+  margin: 40px 0px 60px 0px;
 `;
 
 export const CareerList = styled.ul`
@@ -73,28 +64,36 @@ export const CareerList = styled.ul`
   margin: 0;
   list-style: none;
 
+  h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 1vw;
+    color: #ed770d;
+    margin: 15px 0px 10px 0px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 15px;
+    }
+  }
+
   p {
     margin: 0;
     font-size: 0.9vw;
-    padding-left: 18px;
+    padding-left: 30px;
     letter-spacing: 2px;
-    line-height: 1.8;
 
-    &:nth-child(2) {
-      display: flex;
-      align-items: center;
-      padding-left: 30px;
-      font-size: 0.9vw;
-
-      svg {
-        width: 18px;
-        height: 18px;
-        margin-right: 5px;
-      }
-
-      @media screen and (max-width: 1024px) {
-        font-size: 15px;
-      }
+    span {
+      display-block: inline-block;
+      color: #ed770d;
+      font-weight: bold;
+      margin-right: 20px;
     }
 
     @media screen and (max-width: 1024px) {
@@ -109,7 +108,7 @@ export const CareerItem = styled.li`
 `;
 
 export const Skill = styled.div`
-  margin-top: 40px;
+  margin-top: 20px;
 `;
 
 export const SkillList = styled.ul`
@@ -130,8 +129,8 @@ export const SkillItem = styled.li`
   margin: 3px 5px;
   border: 1px solid #000;
   letter-spacing: 2px;
-  font-size: 0.7vw;
-  font-family: 'Cafe24SsurroundAir';
+  font-size: 0.8vw;
+  font-family: 'SCDream3';
 
   svg {
     width: 18px;
@@ -144,30 +143,23 @@ export const SkillItem = styled.li`
   }
 `;
 
-export const Item = styled.li`
+export const ListItem = styled.li`
   display: flex;
   width: 100%;
-  height: 20vh;
-  padding: 10px 15px;
+  padding: 30px 15px;
   border-bottom: 3px dashed #ebebeb;
   box-sizing: border-box;
-
-  > div:last-child {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    margin-left: 10px;
-    height: 100%;
-  }
 `;
 
-export const ItemTitle = styled.div`
+export const ListTitle = styled.div`
+  width: 35%;
+
   .item-image {
-    flex: 1;
-    height: 100%;
+    wdith: 100%;
+    height: 130px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
 
     &.null {
       display: flex;
@@ -181,62 +173,59 @@ export const ItemTitle = styled.div`
 
   p {
     margin: 0;
-    letter-spacing: -1px;
     font-family: 'Cafe24SsurroundAir';
   }
 
   .item-title {
     font-size: 1.2vw;
     font-weight: bold;
+    margin-top: 15px;
+    word-break: keep-all;
   }
 
-  .item-lang {
-    font-size: 0.8vw;
-  }
-
-  .item-position {
-    font-weight: bold;
+  .item-date {
     font-size: 1vw;
-    margin: 3px 0px;
-    color: #085afa;
+    margin-top: 10px;
   }
 
   .item-url {
-    position: relative;
-    margin-top: auto;
-    font-size: 1vw;
+    display: block;
+    font-size: 0.9vw;
     font-family: 'Cafe24SsurroundAir';
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    z-index: 10;
+    text-decoration: underline;
+    word-break: break-all;
+    color: #808080;
+    margin-top: 30px;
 
     &:hover {
       color: #085afa;
     }
-
-    &::before {
-      position: absolute;
-      bottom: 0;
-      display: block;
-      content: '';
-      width: 17vw;
-      height: 10px;
-      background-color: #d8fa08;
-      z-index: -1;
-    }
-
-    &.null::before {
-      position: initial;
-      bottom: 0;
-      display: initial;
-      content: '';
-      width: initial;
-      height: initial;
-      background-color: transparent;
-      z-index: -1;
-    }
+  }
+  .item-url.null:hover {
+    color: #808080;
   }
 `;
 
-export const ItemDescription = styled.ul``;
+export const DescriptionListWrapper = styled.div`
+  width: 65%;
+`;
+
+export const DescriptionList = styled.ul`
+  margin: 0;
+  list-style: disc;
+`;
+
+export const DescriptionItem = styled.li`
+  font-size: 1vw;
+  margin-bottom: 8px;
+  font-family: 'SCDream3';
+  word-break: keep-all;
+`;
+
+export const Description = styled.p`
+  margin: 0;
+  margin-left: 20px;
+  font-size: 1vw;
+  font-family: 'SCDream3';
+  word-break: keep-all;
+`;

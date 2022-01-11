@@ -3,9 +3,11 @@ import React from 'react';
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { GrCss3, GrReactjs } from 'react-icons/gr';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiRedux, SiJava, SiExpress, SiMongodb } from 'react-icons/si';
+import { SiRedux, SiJava, SiExpress, SiFigma } from 'react-icons/si';
 import { FaNode } from 'react-icons/fa';
 import { BsBuilding } from 'react-icons/bs';
+import { BiGitBranch, BiRocket } from 'react-icons/bi';
+import { DiPhotoshop } from 'react-icons/di';
 
 import TextRolling from '../../TextRolling';
 
@@ -31,25 +33,30 @@ const AboutMe = () => {
       </Header>
 
       <Section>
-        <p>웹이라는 우주에 그림을 그리는 개발자 남은경입니다.</p>
-        <p>내 직업에 부끄러움 없이 당당하기 위해 성실히 공부하고 있습니다.</p>
+        <p>
+          웹이라는 우주에 그림을 그리는 개발자 남은경입니다. 내 직업에 부끄러움
+          없이 당당하기 위해 성실히 공부하고 있습니다.
+        </p>
 
         <Career>
           <SectionTitle>!-- Career</SectionTitle>
 
           <CareerList>
             <CareerItem>
-              <p>- 2020.11 ~ 재직중</p>
-              <p>
+              <h3>
                 <BsBuilding />
                 피타그래프
+              </h3>
+              <p>
+                <span>2020.11월 ~ 재직중</span>
+                공공 SI, SM 솔루션 납품 기업
               </p>
             </CareerItem>
           </CareerList>
         </Career>
 
         <Skill>
-          <SectionTitle>!-- Skill</SectionTitle>
+          <SectionTitle>!-- Front End Skill</SectionTitle>
 
           <SkillList>
             <SkillItem>
@@ -79,22 +86,54 @@ const AboutMe = () => {
 
             <SkillItem>
               <SiJava />
-              JAVA EGOV, JSP
+              JSP
+            </SkillItem>
+          </SkillList>
+        </Skill>
+
+        <Skill>
+          <SectionTitle>!-- Back End Skill</SectionTitle>
+
+          <SkillList>
+            <SkillItem>
+              <SiJava />
+              JAVA Egov
             </SkillItem>
 
             <SkillItem>
               <FaNode />
-              NODE
+              Node.js
             </SkillItem>
 
             <SkillItem>
               <SiExpress />
-              EXPRESS
+              Express.js
+            </SkillItem>
+          </SkillList>
+        </Skill>
+
+        <Skill>
+          <SectionTitle>!-- Tools Skill</SectionTitle>
+
+          <SkillList>
+            <SkillItem>
+              <BiGitBranch />
+              Git
             </SkillItem>
 
             <SkillItem>
-              <SiMongodb />
-              MONGODB
+              <BiRocket />
+              Zeplin
+            </SkillItem>
+
+            <SkillItem>
+              <SiFigma />
+              Figma
+            </SkillItem>
+
+            <SkillItem>
+              <DiPhotoshop />
+              Photoshop
             </SkillItem>
           </SkillList>
         </Skill>
