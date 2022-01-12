@@ -19,7 +19,7 @@ export const Header = styled.div`
 
 export const Section = styled.div`
   flex: 1;
-  padding: 10px 15px;
+  padding: 30px;
   overflow-y: auto;
   box-sizing: border-box;
 
@@ -40,7 +40,7 @@ export const Section = styled.div`
 export const ListWrapper = styled.ul`
   flex: 1;
   margin: 0;
-  padding: 0;
+  padding: 0px 25px;
   list-style: none;
   overflow-y: auto;
   box-sizing: border-box;
@@ -150,9 +150,13 @@ export const SkillItem = styled.li`
 export const ListItem = styled.li`
   display: flex;
   width: 100%;
-  padding: 30px 15px;
+  padding: 30px 0px;
   border-bottom: 3px dashed #ebebeb;
   box-sizing: border-box;
+
+  &:last-child {
+    border-bottom: 0;
+  }
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -164,7 +168,7 @@ export const ListTitle = styled.div`
 
   .item-image {
     width: 100%;
-    height: 130px;
+    height: 150px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
