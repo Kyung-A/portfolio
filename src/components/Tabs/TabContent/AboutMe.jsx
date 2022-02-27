@@ -58,10 +58,10 @@ const AboutMe = () => {
             <CareerItem>
               <h3>
                 <BsBuilding />
-                피타그래프
+                △△기업
               </h3>
               <p>
-                <span>2020.11월 ~ 재직중</span>
+                <span>2020.11월 ~ 2022.2월</span>
                 공공 SI, SM 솔루션 납품 기업
               </p>
             </CareerItem>

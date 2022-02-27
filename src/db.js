@@ -1,9 +1,9 @@
 export const projectList = [
   {
     id: 1,
-    title: '피타그래프 서비스 리뉴얼',
-    image: `${process.env.PUBLIC_URL + '/images/pytha.png'}`,
-    date: '2021.01월~현재진행중',
+    title: '△△기업 서비스 리뉴얼',
+    image: null,
+    date: '2021.01월~',
     descriptionList: [
       {
         item: '자사 서비스 리뉴얼 초기 기획 담당 ',
@@ -27,7 +27,7 @@ export const projectList = [
         item: '기존 React로 구성된 highcharts 데이터 시각화 서비스를 Java, Javascript로 변환 작업 진행중 ',
       },
     ],
-    url: 'https://www.pythagraph.com/',
+    url: null,
   },
   {
     id: 2,
